@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+
+<body>
+    <div class="nav-bar header">
+
+        <a href="index.html">Home</a>
+        <a href="images.html">Charts</a>
+        <a href="form.html">Database</a>
+
+    </div>
+
+    <h1>Survey</h1>
+    <form action="process-form.php" method="post">
+        <label for="current-date">Current Date</label>
+        <input type="text" id="current-date" name="current-date">
+        <label for="awareness">Have you heard of 3D Printing?</label>
+        <select id="awareness" name="awareness">
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+            <option value="3">Maybe</option>
+        </select>
+        <label for="understanding">Rate your understanding of 3D Printing</label>
+        <input type="range" name="understanding" id="understanding" min="1" max="5" step="1">
+        <label for="field"> In what fields do you think 3D Printing is most useful?<br>
+            <input type="checkbox" name="field[]" value="Healthcare"> Healthcare<br>
+            <input type="checkbox" name="field[]" value="Aerospace"> Aerospace<br>
+            <input type="checkbox" name="field[]" value="Automotive"> Automotive<br>
+            <input type="checkbox" name="field[]" value="Fashion"> Fashion<br>
+            <input type="checkbox" name="field[]" value="Education"> Education<br>
+            <input type="checkbox" name="field[]" value="Construction"> Construction<br>
+            <input type="checkbox" name="field[]" value="Other"> Other<br>
+        </label>
+        <br>
+        <label for="comments">Comment</label>
+        <textarea name="comment" id="comments" rows="4" cols="50"
+            placeholder="In a few words describe your understanding of 3D Printing"></textarea>
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+    </form>
+</body>
