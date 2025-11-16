@@ -27,6 +27,8 @@ body {
         "item1"
         "item2"
         "item4"
+        "item5"
+        "item6"
         "item3";
     width: 100%;
     max-width: 1300px;
@@ -60,6 +62,21 @@ body {
     background-color: rgba(255, 255, 255, 1.0);
     padding: 30px 20px;
     text-align: center;
+    border-bottom: solid 2px #b4b3b3;
+}
+
+.main2 {
+    grid-area: item5;
+    background-color: rgba(255, 255, 255, 1.0);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.main3 {
+    grid-area: item6;
+    background-color: rgb(232, 230, 230);
+    padding: 30px 20px;
+    text-align: center;
 }
 
 .footer {
@@ -88,7 +105,9 @@ body {
     color: #000000;
     display: block;
     margin: 20px 0;
-    padding: 0;
+    padding: 30px;
+    border-bottom: solid 1.5px #b4b3b3;
+    text-align: center;
 }
 
 .nav-bar {
@@ -108,8 +127,8 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -118,8 +137,8 @@ a {
 }
 
 a:hover {
-    color: black;
-    background-color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 @media (min-width: 768px) {
@@ -128,6 +147,8 @@ a:hover {
         grid-template-areas:
             "item1 item1"
             "item2 item4"
+            "item5 item5"
+            "item6 item6"
             "item3 item3";
     }
 
