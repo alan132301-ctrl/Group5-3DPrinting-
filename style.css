@@ -31,6 +31,7 @@ body {
         "item4"
         "item5"
         "item6"
+        "item7"
         "item3";
     width: 100%;
     max-width: 1400px;
@@ -80,6 +81,11 @@ body {
     padding: 30px 20px;
     text-align: center;
 }
+.main4{
+    grid-area: item7;
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
 
 .footer {
     grid-area: item3;
@@ -159,6 +165,7 @@ a:hover {
             "item2 item4"
             "item5 item5"
             "item6 item6"
+            "item7 item7"
             "item3 item3";
     }
 
