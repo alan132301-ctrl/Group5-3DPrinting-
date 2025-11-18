@@ -185,11 +185,14 @@ img:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    
+    border-bottom: 2px solid rgb(0, 0, 0);
 
 }
 .survey {
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(127, 132, 133) ;
     padding-left: 20px;
     padding-bottom: 40px;
     padding-top: 20px;
